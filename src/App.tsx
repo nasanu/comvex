@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
+import Home from "./components/home";
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    line-height: 1.2;
+    background-color:#eee;
+    color: #222;
+    padding:0;
+    margin:0;
+
+    input, textarea{
+      font-family: 'Open Sans', sans-serif;
+      font-size:16px;
+      line-height: 1.2;
+    }
+  }
+`;
+
+interface AppInterface {}
+
+function App(props: AppInterface) {
+  console.log("render: app.tsx");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route render={() => <h1>404 Error</h1>} />
+      </Switch>
+    </>
   );
 }
 
