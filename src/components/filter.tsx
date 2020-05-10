@@ -5,19 +5,21 @@ import { filterSelector } from "../redux/selectors/selectors";
 import { filterTypes, searchActionTypes } from "../redux/reducers/searchReducer";
 
 const FilterContainer = Styled.div`
-button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-    outline: inherit;
-    height:40px;
-    padding:8px 16px;
-    border-radius:5px;
-    margin: 40px 10px 0 0;
-}
+    justify-content: center;
+    display: flex;
+    button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        height:40px;
+        padding:8px 16px;
+        border-radius:5px;
+        margin: 40px 10px 0 0;
+    }
   .selected{
       background: #18344a;
       color:#fff;
