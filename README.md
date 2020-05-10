@@ -1,3 +1,15 @@
+## Important Notes
+
+This was done in one day from scratch using create react app. This test is a large project and I am working fulltime plus have many other commitments, I simply do not have the time do complete all of it.
+<br /><br />
+Styles were not a focus, the react framework and basic functionality was, also I did not have access to inspect the invision project so would have had to manually measure everything in photoshop to make the design.
+<br /><br />
+The app was made with React, Redux, React Router, Saga, reSelect, Styled Components and TypeScript. The redux browser tools are also supported.
+<br /><br />
+I have also skipped some interfaces and typescript definitions due to time constraints however there are examples where I have corrected typed and scoped everything. I did not have time to implement any throttleing or debouncing. Also missing is a live search. I can only do so much in one afternoon/evening, I apologise.  
+<br /><br />
+<br /><br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
